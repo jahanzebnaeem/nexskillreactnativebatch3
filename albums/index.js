@@ -15,7 +15,7 @@ import Header from './src/components/Header';
 
 // make a component
 const App = () => {
-  return <Header />;
+  return <Header headerText={'Albums'} />;
 };
 
 // display the component
