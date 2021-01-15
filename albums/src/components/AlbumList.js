@@ -8,16 +8,19 @@ class AlbumList extends Component {
 
   componentDidMount() {
     axios
-      .get('https://rallycoding.herokuapp.com/api/music_albums')
+      .get('http://localhost/reactnativeapi/music_albums.json')
       .then((response) => this.setState({albums: response.data}));
   }
+
+  renderAlbums() {
+    return this.state.albums.map((album) => (
+      <AlbumDetail key={album.title} album={album} />
+    ));
+  }
+
   render() {
     console.log(this.state);
-    return (
-      <View>
-        <AlbumDetail>AlbumList!!</AlbumDetail>
-      </View>
-    );
+    return <View>{this.renderAlbums()}</View>;
   }
 }
 

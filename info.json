@@ -1,0 +1,10 @@
+{
+  "name": "Jahanzeb",
+  "age": 38,
+  "languages": ["ios", "andriod", "react", "react native"],
+  "jobs": [
+    {"location": "Karachi", "designation": "Associate Software Engineer"},
+    {"location": "Lahore", "designation": "Software Engineer"},
+    {"location": "Lahore", "designation": "Senior Software Engineer"}
+  ]
+}
